@@ -1,0 +1,17 @@
+version: '3.9'
+
+services:
+  rust_api_db:
+    container_name: ciulla_api_db
+    image: "postgres:12"
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_USER=hftamayo
+      - POSTGRES_PASSWORD=Postgres123$
+      - POSTGRES_DB=ciulla_api_database
+    volumes:
+      - ciulla_api_data:/var/lib/postgresql/data
+
+volumes:
+  ciulla_api_data: {}
