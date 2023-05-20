@@ -7,9 +7,9 @@ services:
     ports:
       - "5432:5432"
     environment:
-      - POSTGRES_USER=hftamayo
-      - POSTGRES_PASSWORD=Postgres123$
-      - POSTGRES_DB=ciulla_api_database
+      - POSTGRES_USER=htamayobd
+      - POSTGRES_PASSWORD=Postgres123
+      - POSTGRES_DB=ciulla_rustapi_database
     volumes:
       - ciulla_api_data:/var/lib/postgresql/data
 
